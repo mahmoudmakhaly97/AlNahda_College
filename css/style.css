@@ -339,6 +339,11 @@ img {
 .about-us .about-content a:hover {
   background-color: var(--main-color);
 }
+@media (min-width: 1700px) {
+  .about-us .about-img img {
+    width: 60%;
+  }
+}
 
 .academic-programs {
   background-image: url(../../images/academic-programs/bg.png);
@@ -394,6 +399,10 @@ img {
 .academic-programs .academic-programs-item p span {
   float: left;
   text-align: left;
+  transition: 0.3s all ease;
+}
+.academic-programs .academic-programs-item p span:hover {
+  color: var(--main-color);
 }
 .academic-programs .academic-programs-item img {
   width: 80px;

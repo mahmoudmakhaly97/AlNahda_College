@@ -481,7 +481,13 @@ img {
         }
     }
 
-
+    .about-img {
+        img {
+            @media (min-width:1700px) {
+                width: 60%;
+            }
+        }
+    }
 }
 
 // end about us 
@@ -548,8 +554,17 @@ img {
             span {
                 float: left;
                 text-align: left;
+                transition: .3s all ease;
+
+                &:hover {
+                    color: var(--main-color)
+                }
             }
+
+
         }
+
+
 
         img {
             width: 80px;
