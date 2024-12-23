@@ -339,9 +339,44 @@ img {
 .about-us .about-content a:hover {
   background-color: var(--main-color);
 }
-@media (min-width: 1700px) {
-  .about-us .about-img img {
-    width: 60%;
+.about-us .about-img {
+  min-height: 400px;
+}
+@media (max-width: 1400px) {
+  .about-us .about-img {
+    display: none;
+  }
+}
+.about-us .about-img .about-img-one {
+  top: 0;
+  right: 0;
+  width: 50%;
+}
+.about-us .about-img .about-img-two {
+  top: 8rem;
+  right: 21rem;
+  width: 35%;
+}
+.about-us .about-img .about-img-three {
+  top: 23rem;
+  left: 20rem;
+  width: 25%;
+}
+.about-us .about-img .about-img-five {
+  top: -3rem;
+  left: 17rem;
+  z-index: -1;
+}
+.about-us .about-img .about-img-six {
+  bottom: -7rem;
+  left: 10rem;
+}
+.about-us .about-img-alt {
+  display: none !important;
+}
+@media (max-width: 1400px) {
+  .about-us .about-img-alt {
+    display: flex !important;
   }
 }
 

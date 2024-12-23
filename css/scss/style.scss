@@ -481,14 +481,62 @@ img {
         }
     }
 
+    // .about-img {
+    //     img {
+    //         @media (min-width:1700px) {
+    //             width: 60%;
+    //         }
+    //     }
+    // }
     .about-img {
-        img {
-            @media (min-width:1700px) {
-                width: 60%;
-            }
+        min-height: 400px;
+
+        @media(max-width:1400px) {
+            display: none;
+        }
+
+        .about-img-one {
+            top: 0;
+            right: 0;
+            width: 50%;
+        }
+
+        .about-img-two {
+            top: 8rem;
+            right: 21rem;
+            width: 35%;
+
+        }
+
+        .about-img-three {
+            top: 23rem;
+            left: 20rem;
+            width: 25%;
+        }
+
+        .about-img-five {
+            top: -3rem;
+            left: 17rem;
+            z-index: -1;
+
+        }
+
+        .about-img-six {
+            bottom: -7rem;
+            left: 10rem;
+
+        }
+    }
+
+    .about-img-alt {
+        display: none!important;
+
+        @media(max-width:1400px) {
+            display: flex!important;
         }
     }
 }
+
 
 // end about us 
 // start academic programs styles 
