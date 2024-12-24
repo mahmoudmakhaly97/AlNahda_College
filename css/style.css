@@ -218,13 +218,13 @@ img {
   transition: 0.5s all ease-out;
 }
 
-.banner-carousel .banner {
+.banner .bdt-slideshow-item {
   background-image: url(../../images/banner/bg-banner.png);
-  min-height: 100vh;
-  background-size: cover;
   background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(156, 81, 9, 0.19);
 }
-.banner-carousel .banner .banner-content {
+.banner .bdt-slideshow-item .banner-content {
   bottom: 30%;
   width: 30%;
   background-color: rgba(0, 130, 199, 0.7);
@@ -233,7 +233,7 @@ img {
   border-top-left-radius: 0;
   border: 1px solid var(--main-color);
 }
-.banner-carousel .banner .banner-content a {
+.banner .bdt-slideshow-item .banner-content a {
   background-color: #56ae64;
   border-radius: 10px;
   border-top-left-radius: 0;
@@ -243,50 +243,41 @@ img {
   transition: 0.3s all ease;
 }
 @media (max-width: 991px) {
-  .banner-carousel .banner .banner-content a {
+  .banner .bdt-slideshow-item .banner-content a {
     bottom: -23%;
   }
 }
-.banner-carousel .banner .banner-content a:hover {
+.banner .bdt-slideshow-item .banner-content a:hover {
   background-color: rgba(0, 130, 199, 0.7);
 }
 @media (max-width: 1600px) {
-  .banner-carousel .banner .banner-content {
+  .banner .bdt-slideshow-item .banner-content {
     width: 35%;
   }
 }
 @media (max-width: 1400px) {
-  .banner-carousel .banner .banner-content {
+  .banner .bdt-slideshow-item .banner-content {
     width: 40%;
   }
 }
 @media (max-width: 991px) {
-  .banner-carousel .banner .banner-content {
+  .banner .bdt-slideshow-item .banner-content {
     width: 90%;
     bottom: 26%;
     right: 5%;
   }
 }
-.banner-carousel .banner .banner-content h1:last-of-type {
+.banner .bdt-slideshow-item .banner-content h2 {
+  font-size: 2.6rem;
+}
+.banner .bdt-slideshow-item .banner-content h1 {
   font-weight: 600;
+  font-size: 2.8rem;
 }
-.banner-carousel .banner .overlay-1 {
-  background-color: rgba(156, 81, 9, 0.19);
+.banner .bdt-slideshow-item .banner-content p {
+  font-size: 18px;
 }
-.banner-carousel .banner .overlay-2 {
-  background: linear-gradient(to bottom, rgba(1, 103, 188, 0.1), rgba(1, 103, 188, 0.2));
-}
-@media (max-width: 1400px) and (min-width: 991px) {
-  .banner-carousel .banner {
-    background-position: top;
-  }
-}
-@media (max-width: 991px) {
-  .banner-carousel .banner {
-    min-height: 75vh;
-  }
-}
-.banner-carousel .owl-nav {
+.banner .owl-nav {
   width: 100px;
   position: absolute;
   bottom: 2.5rem;
@@ -296,36 +287,56 @@ img {
   color: #fff;
   gap: 0.4rem;
 }
-.banner-carousel .owl-nav i {
+.banner .owl-nav a {
+  color: #fff;
+}
+.banner .owl-nav a i {
   background-color: #56ae64;
   display: block;
   padding: 5px 8px;
   border-radius: 5px;
   font-size: 20px;
 }
-.banner-carousel .owl-nav button.owl-next i {
+.banner .owl-nav .owl-next i {
   border-top-right-radius: 0;
 }
-.banner-carousel .owl-nav button.owl-prev i {
+.banner .owl-nav .owl-prev i {
   border-top-left-radius: 0;
 }
-.banner-carousel .owl-dots {
-  transform: rotate(90deg);
-  bottom: 4rem;
-  position: absolute;
-}
-.banner-carousel .owl-dots .owl-dot {
-  margin: 0 5px;
-}
-.banner-carousel .owl-dots .owl-dot span {
+.banner .bdt-prime-slider-skin-crelly .bdt-dotnav li a {
   display: block;
   width: 13px;
   height: 13px;
   background-color: #5d7a8c;
   border-radius: 50%;
+  border: none !important;
 }
-.banner-carousel .owl-dots .owl-dot.active span {
+.banner .bdt-prime-slider-skin-crelly .bdt-dotnav li a::before {
+  background-color: transparent !important;
+}
+.banner .bdt-prime-slider-skin-crelly .bdt-dotnav li.bdt-active a:after {
+  border: none !important;
   background-color: #0d446b;
+}
+.banner .bdt-prime-slider-skin-crelly .bdt-dotnav {
+  margin: 0;
+  bottom: 4rem;
+  position: absolute;
+}
+.banner [class*=bdt-position-center-left],
+.banner [class*=bdt-position-center-right],
+.banner .bdt-position-center-vertical {
+  top: 84%;
+  right: 1em;
+}
+.banner .bdt-slideshow-item .overlay-1 {
+  background-color: rgba(156, 81, 9, 0.19);
+}
+.banner .bdt-slideshow-item .overlay-2 {
+  background: linear-gradient(to top, rgba(1, 103, 188, 0.3), rgba(1, 103, 188, 0.2), rgba(1, 103, 188, 0.1));
+}
+.banner .bdt-slideshow-items {
+  height: 80vh;
 }
 
 .about-us {
@@ -352,7 +363,7 @@ img {
 }
 .about-us .about-content p {
   color: var(--gray);
-  font-size: 1.125rem;
+  font-size: 1.23rem;
   line-height: 1.7;
 }
 .about-us .about-content a {
@@ -360,7 +371,7 @@ img {
   border-radius: 10px;
   border-top-left-radius: 0;
   transition: 0.3s all ease;
-  font-size: 1.063rem;
+  font-size: 1.2rem;
 }
 .about-us .about-content a:hover {
   background-color: var(--main-color);
@@ -428,7 +439,7 @@ img {
 }
 .academic-programs .academic-programs-header p {
   color: #9d9d9d;
-  font-size: 1.125rem;
+  font-size: 1.23rem;
   font-weight: 500;
   width: 90%;
 }
@@ -456,6 +467,7 @@ img {
   color: #9d9d9d;
   text-align: justify;
   font-weight: 500;
+  font-size: 16.5px;
 }
 .academic-programs .academic-programs-item p span {
   float: left;
@@ -505,7 +517,7 @@ img {
 }
 .submission-and-registration .header p {
   color: #9d9d9d;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 @media (max-width: 1200px) {
@@ -536,7 +548,7 @@ img {
 }
 .submission-and-registration .submission-content .submission-item .desc p {
   color: #9d9d9d;
-  font-size: 18px;
+  font-size: 19px;
 }
 .submission-and-registration .btn-container button {
   background-color: var(--secondary-color);
