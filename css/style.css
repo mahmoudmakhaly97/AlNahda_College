@@ -194,6 +194,29 @@ img {
   color: #fff;
   background-color: var(--secondary-color);
 }
+.navbar.scrolled {
+  position: fixed;
+  right: 0;
+  left: 0;
+  top: 0;
+  z-index: 999999;
+  margin-top: -130px;
+  background: #fff !important;
+  padding-top: 0.7rem !important;
+  padding-bottom: 0.7rem !important;
+  transition: 0.5s all ease-out;
+}
+.navbar.scrolled .navbar-nav .nav-link {
+  color: var(--main-color) !important;
+}
+.navbar.awake {
+  margin-top: 0px;
+  transition: 1s all ease-out;
+  z-index: 99999999;
+}
+.navbar.sleep {
+  transition: 0.5s all ease-out;
+}
 
 .banner-carousel .banner {
   background-image: url(../../images/banner/bg-banner.png);
