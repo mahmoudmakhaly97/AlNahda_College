@@ -250,6 +250,9 @@ img {
 .banner-carousel .banner .overlay-1 {
   background-color: rgba(156, 81, 9, 0.19);
 }
+.banner-carousel .banner .overlay-2 {
+  background: linear-gradient(to bottom, rgba(1, 103, 188, 0.1), rgba(1, 103, 188, 0.2));
+}
 @media (max-width: 1400px) and (min-width: 991px) {
   .banner-carousel .banner {
     background-position: top;
