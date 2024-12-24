@@ -76,54 +76,16 @@ $('.events-carousel').owlCarousel({
   });
 // end data aos animation
 //start   navbar scroll logic
-var scrollWindow = function () {
-  
-    $(window).scroll(function () {
-    var navbar = document.querySelector(".navbar");
-			var $w = $(this),
-        st = $w.scrollTop(),
-          
 
-        
-					navbar = $('.ftco_navbar'),
-					sd = $('.js-scroll-wrap');
- 			if (st > 80) {
-				if ( !navbar.hasClass('scrolled') ) {
-                    navbar.addClass('scrolled');	
-                  
-              //  document.getElementById("logo").src = "../images/home/navbar/colored-logo.svg";
+  window.addEventListener("scroll", function () {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 50) { // Adjust the scroll threshold as needed
+      navbar.classList.add("shrink");
+    } else {
+      navbar.classList.remove("shrink");
+    }
+  });
 
-				}
-                
-			} 
-			if (st < 80) {
-				if ( navbar.hasClass('scrolled') ) {
-                    navbar.removeClass('scrolled sleep');
-                                  //  document.getElementById("logo").src = "../images/home/navbar/logo.svg";
-
-				}
-			} 
-			if ( st > 80 ) {
-				if ( !navbar.hasClass('awake') ) {
-					navbar.addClass('awake');	
-				}
-				
-				if(sd.length > 0) {
-					sd.addClass('sleep');
-				}
-			}
-			if ( st < 105 ) {
-				if ( navbar.hasClass('awake') ) {
-					navbar.removeClass('awake');
-					navbar.addClass('sleep');
-				}
-				if(sd.length > 0) {
-					sd.removeClass('sleep');
-				}
-			}
-		});
-	};
-scrollWindow();
 
 // end navbar scroll logic 
 

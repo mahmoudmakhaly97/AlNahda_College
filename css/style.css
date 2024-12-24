@@ -62,6 +62,10 @@ img {
 .navbar {
   background-color: #fff;
   border-bottom: 8px solid var(--main-color);
+  transition: 0.3s all ease;
+}
+.navbar .logo-container img {
+  transition: all 0.3s ease;
 }
 .navbar .links-container .topbar-links > ul li {
   position: relative;
@@ -111,6 +115,7 @@ img {
 }
 .navbar .links-container .navbar-links > ul li a:hover {
   color: var(--secondary-color);
+  background-color: transparent;
 }
 @media (max-width: 1400px) {
   .navbar .links-container .navbar-links > ul li a {
@@ -147,6 +152,29 @@ img {
 .navbar .links-container .navbar-links .dropdown-menu {
   right: 0;
   top: 3.5rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  border-top: 8px solid var(--secondary-color);
+  text-align: right;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.navbar .links-container .navbar-links .dropdown-menu li a {
+  border-bottom: 1px dotted #9d9d9d;
+}
+.navbar .links-container .navbar-links .dropdown-menu li:last-of-type a {
+  border-bottom: 0;
+}
+.navbar.shrink {
+  padding: 0.4rem 0 !important;
+}
+.navbar.shrink .logo-container img {
+  max-width: 90%;
+}
+.navbar.shrink .navbar-links .dropdown-menu {
+  margin-top: -6px;
+  background-color: #fff;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .navbar .offcanvas-body .navbar-links li a {
   font-weight: 600;
@@ -193,29 +221,6 @@ img {
 .navbar .offcanvas-body .topbar-links .social a:hover {
   color: #fff;
   background-color: var(--secondary-color);
-}
-.navbar.scrolled {
-  position: fixed;
-  right: 0;
-  left: 0;
-  top: 0;
-  z-index: 999999;
-  margin-top: -130px;
-  background: #fff !important;
-  padding-top: 0.7rem !important;
-  padding-bottom: 0.7rem !important;
-  transition: 0.5s all ease-out;
-}
-.navbar.scrolled .navbar-nav .nav-link {
-  color: var(--main-color) !important;
-}
-.navbar.awake {
-  margin-top: 0px;
-  transition: 1s all ease-out;
-  z-index: 99999999;
-}
-.navbar.sleep {
-  transition: 0.5s all ease-out;
 }
 
 .banner .bdt-slideshow-item {
@@ -332,7 +337,7 @@ img {
   background-color: rgba(156, 81, 9, 0.19);
 }
 .banner .bdt-slideshow-item .overlay-2 {
-  background: linear-gradient(to top, rgba(1, 103, 188, 0.3), rgba(1, 103, 188, 0.2), rgba(1, 103, 188, 0.1));
+  background: linear-gradient(to right, rgba(254, 254, 254, 0) 0%, rgba(1, 103, 189, 0.4) 100%);
 }
 .banner .bdt-slideshow-items {
   height: 80vh;
