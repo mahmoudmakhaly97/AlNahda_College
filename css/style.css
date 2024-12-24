@@ -219,7 +219,6 @@ img {
 }
 
 .banner .bdt-slideshow-item {
-  background-image: url(../../images/banner/bg-banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(156, 81, 9, 0.19);
