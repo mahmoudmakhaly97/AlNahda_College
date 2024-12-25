@@ -319,7 +319,7 @@ img {
 }
 .banner .bdt-prime-slider-skin-crelly .bdt-dotnav li.bdt-active a:after {
   border: none !important;
-  background-color: #0d446b;
+  background-color: #6d8799;
 }
 .banner .bdt-prime-slider-skin-crelly .bdt-dotnav {
   margin: 0;
@@ -331,12 +331,6 @@ img {
 .banner .bdt-position-center-vertical {
   top: 84%;
   right: 1em;
-}
-.banner .bdt-slideshow-item .overlay-1 {
-  background-color: rgba(156, 81, 9, 0.19);
-}
-.banner .bdt-slideshow-item .overlay-2 {
-  background-image: url(../../images/banner/layer2.png);
 }
 .banner .bdt-slideshow-items {
   height: 100vh;
