@@ -336,7 +336,7 @@ img {
   background-color: rgba(156, 81, 9, 0.19);
 }
 .banner .bdt-slideshow-item .overlay-2 {
-  background: linear-gradient(to top left, rgba(1, 103, 188, 0.3), rgba(1, 103, 188, 0) 60%);
+  background-image: url(../../images/banner/layer2.png);
 }
 .banner .bdt-slideshow-items {
   height: 80vh;
