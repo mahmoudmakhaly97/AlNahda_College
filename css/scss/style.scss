@@ -214,8 +214,8 @@ img {
         text-align: right;
         padding-right: 10px;
         padding-left: 10px;
-
-        width: fit-content !important;
+        min-width: 180px !important;
+        max-width: 900px !important;
 
         li {
           transition: 0.3s all ease;
@@ -234,7 +234,8 @@ img {
             padding-left: 0;
             padding-right: 0;
             width: auto;
-            display: block;
+            display: inline-block;
+            box-sizing: border-box !important;
 
             &:after {
               content: "";
@@ -248,8 +249,8 @@ img {
               right: 10px !important;
             }
             &:hover {
-              padding-right: 10px !important;
-              box-sizing: border-box;
+              margin-right: 10px !important;
+              box-sizing: border-box !important;
 
               &:after {
                 width: 90%;
@@ -257,6 +258,12 @@ img {
             }
           }
         }
+      }
+      .academic-program-dropdown-1 {
+        width: 380px;
+      }
+      .academic-program-dropdown-2 {
+        width: 250px;
       }
     }
   }

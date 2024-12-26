@@ -183,7 +183,8 @@ img {
   text-align: right;
   padding-right: 10px;
   padding-left: 10px;
-  width: fit-content !important;
+  min-width: 180px !important;
+  max-width: 900px !important;
 }
 .navbar .links-container .navbar-links .dropdown-menu li {
   transition: 0.3s all ease;
@@ -196,7 +197,8 @@ img {
   padding-left: 0;
   padding-right: 0;
   width: auto;
-  display: block;
+  display: inline-block;
+  box-sizing: border-box !important;
 }
 .navbar .links-container .navbar-links .dropdown-menu li a:after {
   content: "";
@@ -210,11 +212,17 @@ img {
   right: 10px !important;
 }
 .navbar .links-container .navbar-links .dropdown-menu li a:hover {
-  padding-right: 10px !important;
-  box-sizing: border-box;
+  margin-right: 10px !important;
+  box-sizing: border-box !important;
 }
 .navbar .links-container .navbar-links .dropdown-menu li a:hover:after {
   width: 90%;
+}
+.navbar .links-container .navbar-links .academic-program-dropdown-1 {
+  width: 380px;
+}
+.navbar .links-container .navbar-links .academic-program-dropdown-2 {
+  width: 250px;
 }
 .navbar.shrink {
   padding: 0.4rem 0 !important;
