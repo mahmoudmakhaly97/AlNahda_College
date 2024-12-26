@@ -219,10 +219,10 @@ img {
   width: 90%;
 }
 .navbar .links-container .navbar-links .academic-program-dropdown-1 {
-  width: 380px;
+  min-width: 380px !important;
 }
 .navbar .links-container .navbar-links .academic-program-dropdown-2 {
-  width: 250px;
+  min-width: 250px !important;
 }
 .navbar.shrink {
   padding: 0.4rem 0 !important;
