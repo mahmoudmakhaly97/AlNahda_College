@@ -87,5 +87,12 @@ $('.events-carousel').owlCarousel({
   });
 
 
-// end navbar scroll logic 
+// end navbar scroll logic
 
+
+const cursor = document.querySelector(".custom-cursor");
+
+document.addEventListener("mousemove", (e) => {
+  cursor.style.top = `${e.clientY-10}px`;
+  cursor.style.left = `${e.clientX-5}px`;
+});
