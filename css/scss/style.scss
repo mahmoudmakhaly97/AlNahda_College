@@ -163,6 +163,12 @@ img {
               left: -26px;
               top: 50%;
               transform: translateY(-50%);
+              @media (max-width: 1700px) {
+                left: -14px;
+              }
+              @media (max-width: 1400px) {
+                left: -5px;
+              }
             }
           }
 
@@ -178,7 +184,13 @@ img {
           }
         }
         @media (min-width: 1700px) {
-          gap: 4rem !important;
+          gap: 2.2rem !important;
+        }
+        @media (max-width: 1700px) {
+          gap: 2rem !important;
+        }
+        @media (max-width: 1400px) {
+          gap: 1.1rem !important;
         }
       }
 
@@ -203,6 +215,8 @@ img {
         padding-right: 10px;
         padding-left: 10px;
 
+        width: fit-content !important;
+
         li {
           transition: 0.3s all ease;
           position: relative;
@@ -221,6 +235,7 @@ img {
             padding-right: 0;
             width: auto;
             display: block;
+
             &:after {
               content: "";
               width: 0%;
@@ -234,8 +249,10 @@ img {
             }
             &:hover {
               padding-right: 10px !important;
+              box-sizing: border-box;
+
               &:after {
-                width: 80%;
+                width: 90%;
               }
             }
           }
