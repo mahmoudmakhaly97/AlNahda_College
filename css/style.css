@@ -141,6 +141,11 @@ img {
 .navbar .links-container .navbar-links > ul > li:last-of-type:hover {
   background-color: var(--main-color);
 }
+@media (min-width: 1700px) {
+  .navbar .links-container .navbar-links > ul {
+    gap: 4rem !important;
+  }
+}
 .navbar .links-container .navbar-links .dropdown-toggle::after {
   content: "\f078";
   font-family: "Font Awesome 5 Free";

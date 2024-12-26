@@ -177,6 +177,9 @@ img {
             }
           }
         }
+        @media (min-width: 1700px) {
+          gap: 4rem !important;
+        }
       }
 
       .dropdown-toggle {
@@ -227,7 +230,7 @@ img {
               transition: 0.3s all ease;
               right: 0;
               bottom: 0;
-            right: 10px !important;
+              right: 10px !important;
             }
             &:hover {
               padding-right: 10px !important;

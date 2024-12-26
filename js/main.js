@@ -93,6 +93,6 @@ $('.events-carousel').owlCarousel({
 const cursor = document.querySelector(".custom-cursor");
 
 document.addEventListener("mousemove", (e) => {
-  cursor.style.top = `${e.clientY-10}px`;
-  cursor.style.left = `${e.clientX-5}px`;
+  cursor.style.top = `${e.clientY-0}px`;
+  cursor.style.left = `${e.clientX}px`;
 });
