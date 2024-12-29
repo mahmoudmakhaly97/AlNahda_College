@@ -25,7 +25,7 @@ $(".banner-carousel").owlCarousel({
 });
 
 // academic programs carousel in desktop
-$(".academic-programs-carousel-mobile").owlCarousel({
+$(".academic-programs-carousel-desktop").owlCarousel({
   loop: true,
   rtl: true,
 
@@ -50,7 +50,7 @@ $(".academic-programs-carousel-mobile").owlCarousel({
   },
 });
 // academic programs carousel in mobile
-$(".academic-programs-carousel").owlCarousel({
+$(".academic-programs-carousel-mobile").owlCarousel({
   loop: true,
   rtl: true,
 
