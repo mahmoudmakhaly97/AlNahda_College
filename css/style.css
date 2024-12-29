@@ -216,7 +216,7 @@ img {
   box-sizing: border-box !important;
 }
 .navbar .links-container .navbar-links .dropdown-menu li a:hover:after {
-  width: 90%;
+  width: 95%;
 }
 .navbar .links-container .navbar-links .academic-program-dropdown-1 {
   min-width: 380px !important;
