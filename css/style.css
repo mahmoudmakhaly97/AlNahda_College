@@ -555,7 +555,7 @@ img {
 }
 @media (max-width: 1200px) {
   .academic-programs .item {
-    padding: 0 40px;
+    padding: 0 30px;
   }
 }
 .academic-programs .owl-dots {
