@@ -246,7 +246,7 @@ img {
   transition: 0.3s all ease;
 }
 .navbar .offcanvas-body .navbar-links .e-gate.show {
-  max-width: 170px;
+  max-width: 200px;
   margin: auto;
 }
 .navbar .offcanvas-body .navbar-links .e-gate:hover {
