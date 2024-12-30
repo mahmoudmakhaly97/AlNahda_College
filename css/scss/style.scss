@@ -160,7 +160,7 @@ img {
               width: 2px;
               height: 20px;
               background-color: var(--main-color);
-              left: -26px;
+              left: -15px;
               top: 50%;
               transform: translateY(-50%);
               @media (max-width: 1700px) {
@@ -269,11 +269,12 @@ img {
   }
 
   &.shrink {
-    padding: 0.4rem 0 !important;
+    padding: 0.2rem 0 !important;
+    height: 95px;
 
     .logo-container {
       img {
-        max-width: 90%;
+        max-width: 74%;
       }
     }
 
@@ -282,6 +283,20 @@ img {
         margin-top: -6px;
         box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
           rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+      }
+    }
+    .links-container {
+      .navbar-links {
+        .dropdown-menu {
+          top: 4.6rem;
+        }
+        > ul {
+          li {
+            a {
+              font-size: 1rem;
+            }
+          }
+        }
       }
     }
   }
@@ -324,6 +339,7 @@ img {
     }
 
     .topbar-links {
+      transition: 0.3s all ease;
       > ul {
         li {
           position: relative;
@@ -661,7 +677,6 @@ img {
   }
 
   .academic-programs-item {
-
     background-color: #e3f1f0;
     border: 12px solid #fff;
     border-radius: 30px;

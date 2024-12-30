@@ -110,19 +110,30 @@ window.addEventListener("load", () => {
 });
 // end data aos animation
 //start   navbar scroll logic
-
 window.addEventListener("scroll", function () {
   const navbar = document.querySelector(".navbar");
+  const dropdowns = document.querySelectorAll(".dropdown-menu.show");
+
   if (window.scrollY > 50) {
-    // Adjust the scroll threshold as needed
     navbar.classList.add("shrink");
+    document.querySelector(".topbar-links").style.display = "none";
+    dropdowns.forEach((dropdown) => {
+      const dropdownToggle = dropdown.previousElementSibling;
+      if (
+        dropdownToggle &&
+        dropdownToggle.classList.contains("dropdown-toggle")
+      ) {
+        dropdownToggle.click();
+      }
+    });
   } else {
     navbar.classList.remove("shrink");
+    document.querySelector(".topbar-links").style.display = "block";
   }
 });
 
 // end navbar scroll logic
-
+// start cursor shape logic
 const cursor = document.querySelector(".custom-cursor");
 
 document.addEventListener("mousemove", (e) => {
