@@ -242,7 +242,7 @@ img {
   top: 4.4rem;
 }
 .navbar.shrink .links-container .navbar-links > ul li a {
-  font-size: 1rem;
+  font-size: 15px;
 }
 .navbar .offcanvas-body .navbar-links li a {
   font-weight: 600;
