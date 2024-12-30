@@ -140,3 +140,7 @@ document.addEventListener("mousemove", (e) => {
   cursor.style.top = `${e.clientY - 0}px`;
   cursor.style.left = `${e.clientX}px`;
 });
+// relax plugin
+window.onload = function () {
+  var rellax = new Rellax(".rellax");
+};
