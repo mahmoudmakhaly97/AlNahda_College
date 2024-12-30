@@ -325,6 +325,11 @@ img {
   z-index: 99999999;
   height: 110px;
 }
+@media (max-width: 1200px) {
+  .navbar.awake {
+    height: 160px;
+  }
+}
 .navbar.sleep {
   transition: 1s all ease-out;
 }
