@@ -178,7 +178,7 @@ img {
 }
 .navbar .links-container .navbar-links .dropdown-menu {
   right: 0;
-  top: 3.5rem;
+  top: 4.7rem;
   background-color: rgba(255, 255, 255, 0.7);
   border: none;
   border-top: 8px solid var(--secondary-color);
@@ -819,17 +819,12 @@ img {
   height: 50px;
 }
 
-.custom-cursor {
-  position: fixed;
-  left: 0;
-  width: 10px;
-  height: 10px;
-  background-color: var(--main-color); /* Adjust color */
-  border-radius: 50%;
-  pointer-events: none; /* Prevent interaction */
-  z-index: 9999;
-  transform: translate(-50%, -50%);
-  transition: 0.1s ease all;
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.nav-item.dropdown .dropdown-menu {
+  display: none; /* Ensure it starts hidden */
 }
 
 /*# sourceMappingURL=style.css.map */

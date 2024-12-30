@@ -169,7 +169,7 @@ var scrollWindow = function () {
 					sd.addClass('sleep');
 				}
 			}
-			if ( st < 105 ) {
+			if ( st < 250) {
 				if ( navbar.hasClass('awake') ) {
 					navbar.removeClass('awake');
 					navbar.addClass('sleep');
@@ -184,14 +184,14 @@ scrollWindow();
   
 
 // end navbar scroll logic
-// start cursor shape logic
-const cursor = document.querySelector(".custom-cursor");
+// // start cursor shape logic
+// const cursor = document.querySelector(".custom-cursor");
 
-document.addEventListener("mousemove", (e) => {
-  cursor.style.top = `${e.clientY - 0}px`;
-  cursor.style.left = `${e.clientX}px`;
-});
-// relax plugin
-window.onload = function () {
-  var rellax = new Rellax(".rellax");
-};
+// document.addEventListener("mousemove", (e) => {
+//   cursor.style.top = `${e.clientY - 0}px`;
+//   cursor.style.left = `${e.clientX}px`;
+// });
+// // relax plugin
+// window.onload = function () {
+//   var rellax = new Rellax(".rellax");
+// };
