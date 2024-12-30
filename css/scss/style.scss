@@ -588,7 +588,6 @@ img {
     }
   }
 
-   
   .about-img {
     min-height: 400px;
 
@@ -600,29 +599,39 @@ img {
       top: 0;
       right: 0;
       width: 50%;
+      border-radius: 30px;
+      border-top-left-radius: 0;
     }
 
     .about-img-two {
       top: 8rem;
       right: 21rem;
       width: 35%;
+      border-radius: 30px;
+      border-top-right-radius: 0;
     }
 
     .about-img-three {
       top: 23rem;
       left: 20rem;
       width: 25%;
+      border-radius: 30px;
+      border-bottom-left-radius: 0;
     }
 
     .about-img-five {
       top: -3rem;
       left: 17rem;
       z-index: -1;
+      border-radius: 30px;
+      border-top-left-radius: 0;
     }
 
     .about-img-six {
       bottom: -7rem;
       left: 10rem;
+      border-radius: 30px;
+      border-bottom-right-radius: 0;
     }
   }
 
