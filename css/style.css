@@ -114,7 +114,6 @@ img {
   transition: 0.3s all ease;
   display: block !important;
   width: 100%;
-  padding-bottom: 0.5rem;
 }
 .navbar .links-container .navbar-links > ul li a:hover {
   color: var(--secondary-color);
