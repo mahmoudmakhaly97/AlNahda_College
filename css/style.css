@@ -110,7 +110,7 @@ img {
 .navbar .links-container .navbar-links > ul li a {
   color: var(--main-color);
   font-weight: 600;
-  font-size: 1.063rem;
+  font-size: 15px;
   transition: 0.3s all ease;
   display: block !important;
   width: 100%;
@@ -144,13 +144,13 @@ img {
     left: -5px;
   }
 }
-.navbar .links-container .navbar-links > ul > li:last-of-type {
+.navbar .links-container .navbar-links > ul .e-services > a {
   background-color: var(--secondary-color);
   border-radius: 10px;
   border-top-left-radius: 0;
   transition: 0.3s all ease;
 }
-.navbar .links-container .navbar-links > ul > li:last-of-type:hover {
+.navbar .links-container .navbar-links > ul .e-services > a:hover {
   background-color: var(--main-color);
 }
 @media (min-width: 1700px) {
@@ -178,7 +178,7 @@ img {
 }
 .navbar .links-container .navbar-links .dropdown-menu {
   right: 0;
-  top: 4.7rem;
+  top: 5rem;
   background-color: rgba(255, 255, 255, 0.7);
   border: none;
   border-top: 8px solid var(--secondary-color);
@@ -222,14 +222,11 @@ img {
   width: 95%;
 }
 .navbar .links-container .navbar-links .academic-program-dropdown-1 {
-  min-width: 395px !important;
+  min-width: 400px !important;
 }
 .navbar .links-container .navbar-links .academic-program-dropdown-2 {
   min-width: 265px !important;
-}
-.navbar.shrink {
-  padding: 0.2rem 0 !important;
-  height: 95px;
+  top: 5rem;
 }
 .navbar.shrink .logo-container img {
   max-width: 74%;
@@ -239,10 +236,17 @@ img {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .navbar.shrink .links-container .navbar-links .dropdown-menu {
-  top: 4.4rem;
+  top: 5.7rem;
 }
 .navbar.shrink .links-container .navbar-links > ul li a {
   font-size: 15px;
+}
+.navbar.shrink .e-services {
+  padding-bottom: 1.8rem !important;
+  padding-top: 1.2rem !important;
+}
+.navbar.shrink .e-services .dropdown-menu {
+  top: 5.9rem !important;
 }
 .navbar .offcanvas-body .navbar-links li a {
   font-weight: 600;
@@ -313,19 +317,13 @@ img {
   top: 0;
   z-index: 999999;
   margin-top: -160px;
-  padding-top: 0.7rem !important;
-  padding-bottom: 0.7rem !important;
   transition: 0.5s all ease-out;
-}
-@media (max-width: 1200px) {
-  .navbar.scrolled {
-    min-height: 10rem !important;
-  }
 }
 .navbar.awake {
   margin-top: 0px;
   transition: 1s all ease-out;
   z-index: 99999999;
+  height: 110px;
 }
 .navbar.sleep {
   transition: 1s all ease-out;
@@ -817,6 +815,10 @@ img {
 
 .copyright .right img {
   height: 50px;
+}
+
+.navbar-links .nav-item.dropdown {
+  padding: 1.3rem 0 1.2rem 0;
 }
 
 .nav-item.dropdown:hover .dropdown-menu {
