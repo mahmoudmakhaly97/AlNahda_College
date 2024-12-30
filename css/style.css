@@ -312,10 +312,15 @@ img {
   left: 0;
   top: 0;
   z-index: 999999;
-  margin-top: -150px;
+  margin-top: -160px;
   padding-top: 0.7rem !important;
   padding-bottom: 0.7rem !important;
   transition: 0.5s all ease-out;
+}
+@media (max-width: 1200px) {
+  .navbar.scrolled {
+    min-height: 10rem !important;
+  }
 }
 .navbar.awake {
   margin-top: 0px;
