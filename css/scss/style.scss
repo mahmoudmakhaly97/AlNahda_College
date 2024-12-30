@@ -546,7 +546,16 @@ img {
 // start about us
 .about-us {
   padding: 100px 0;
-
+  overflow: hidden;
+  .right-layer {
+    z-index: -9999;
+  }
+  .left-layer {
+    width: 27%;
+    top: -19rem !important;
+    left: -13rem;
+    z-index: -99999;
+  }
   @media (max-width: 991px) {
     padding: 24px 0;
   }
