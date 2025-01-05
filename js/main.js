@@ -189,17 +189,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (nextButton) {
  
-      nextButton.click();
+    setTimeout(() => {
+        nextButton.click();
+} , 1000)
  
   }
 });
 
-// loader logic
-window.addEventListener("load", function () {
+
   // Remove the loader
   const loader = document.getElementById("loader");
   if (loader) {
     loader.style.opacity = "0";
-    setTimeout(() => loader.remove(), 1200);
+    setTimeout(() => loader.remove(), 1000);
   }
-});
+
