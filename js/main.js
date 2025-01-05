@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function () {
  
     setTimeout(() => {
         nextButton.click();
-} , 1000)
+} , 300)
  
   }
 });
