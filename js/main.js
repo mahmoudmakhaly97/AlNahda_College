@@ -188,18 +188,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const nextButton = document.querySelector(".owl-prev");
 
   if (nextButton) {
-    nextButton.click();
+ 
+      nextButton.click();
+ 
   }
 });
-
-
 
 // loader logic
 window.addEventListener("load", function () {
   // Remove the loader
   const loader = document.getElementById("loader");
   if (loader) {
-    loader.style.opacity = "0"; 
-    setTimeout(() => loader.remove(),1000); 
+    loader.style.opacity = "0";
+    setTimeout(() => loader.remove(), 1200);
   }
 });
