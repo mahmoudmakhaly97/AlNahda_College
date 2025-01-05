@@ -184,22 +184,22 @@ var scrollWindow = function () {
 scrollWindow();
 
 // banner logic
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function (e) {
   const nextButton = document.querySelector(".owl-prev");
-
+  e.preventDefault();
   if (nextButton) {
- 
+    setTimeout(() => {
       nextButton.click();
- 
+    }, 300);
   }
 });
 
 // loader logic
-window.addEventListener("load", function () {
-  // Remove the loader
+window.addEventListener("load", function (e) {
+  e.preventDefault();
   const loader = document.getElementById("loader");
   if (loader) {
     loader.style.opacity = "0";
-    setTimeout(() => loader.remove(), 1200);
+    setTimeout(() => loader.remove(), 1300);
   }
 });
