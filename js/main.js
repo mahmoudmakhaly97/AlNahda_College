@@ -190,16 +190,22 @@ document.addEventListener("DOMContentLoaded", function (e) {
   if (nextButton) {
     setTimeout(() => {
       nextButton.click();
-    }, 300);
+    }, 1000);
   }
 });
 
-// loader logic
+// Loader logic
 window.addEventListener("load", function (e) {
   e.preventDefault();
   const loader = document.getElementById("loader");
   if (loader) {
-    loader.style.opacity = "0";
-    setTimeout(() => loader.remove(), 1300);
+    const minLoadTime = 600; // Minimum time in milliseconds
+    const loadStart = performance.now();
+
+    // Ensure the loader remains for a consistent duration
+    setTimeout(() => {
+      loader.style.opacity = "0";
+      setTimeout(() => loader.remove(), 300); // Smooth fade-out
+    }, Math.max(0, minLoadTime - (performance.now() - loadStart)));
   }
 });
