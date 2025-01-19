@@ -1233,9 +1233,21 @@ img {
   color: var(--main-color);
   font-weight: 600;
 }
-.academic_affairs__wrapper .academic-calendar .college-message .message-item i {
+.academic_affairs__wrapper .academic-calendar .college-message .message-item img {
   color: var(--main-color);
   font-size: 5em;
+}
+.academic_affairs__wrapper .academic-calendar .college-message .message-item .msg-item-img-one {
+  background-image: url(../../images/academic-affairs/calendar.svg);
+  width: 120px;
+  height: 100px;
+  background-repeat: no-repeat;
+}
+.academic_affairs__wrapper .academic-calendar .college-message .message-item .msg-item-img-two {
+  background-image: url(../../images/academic-affairs/document.svg);
+  width: 120px;
+  height: 100px;
+  background-repeat: no-repeat;
 }
 .academic_affairs__wrapper .academic-calendar .college-message .message-item:hover {
   background-color: var(--main-color);
@@ -1244,8 +1256,11 @@ img {
 .academic_affairs__wrapper .academic-calendar .college-message .message-item:hover h2 {
   color: #fff;
 }
-.academic_affairs__wrapper .academic-calendar .college-message .message-item:hover i {
-  color: #fff;
+.academic_affairs__wrapper .academic-calendar .college-message .message-item:hover .msg-item-img-one {
+  background-image: url(../../images/academic-affairs/calendar-w.png);
+}
+.academic_affairs__wrapper .academic-calendar .college-message .message-item:hover .msg-item-img-two {
+  background-image: url(../../images/academic-affairs/document-w.png);
 }
 .academic_affairs__wrapper .registration-and-submision {
   background-image: url(../../images/graduates/submission.png);
@@ -1343,7 +1358,12 @@ img {
   margin-left: 0;
   margin-right: auto;
   background-image: none;
-  background-image: url(../../images/admission/arrow-down.svg);
+  content: "\f078";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+  transition: 0.3s all ease;
 }
 .admission_and_registration__wrapper .general-standards .accordion .accordion-button h3 {
   color: var(--secondary-color);
@@ -1358,8 +1378,14 @@ img {
 .admission_and_registration__wrapper .general-standards .accordion .accordion-button:focus {
   box-shadow: none;
 }
+.admission_and_registration__wrapper .general-standards .accordion .accordion-button:hover::after {
+  color: var(--main-color);
+}
 .admission_and_registration__wrapper .general-standards .accordion .accordion-button.collapsed {
   background-color: #f3f3f3;
+}
+.admission_and_registration__wrapper .general-standards .accordion .accordion-button.collapsed:hover::after {
+  color: var(--main-color);
 }
 .admission_and_registration__wrapper .general-standards .accordion .accordion-button:not(.collapsed) {
   background-color: #f3f3f3;

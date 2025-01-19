@@ -1400,19 +1400,34 @@ img {
           color: var(--main-color);
           font-weight: 600;
         }
-        i {
+        img {
           color: var(--main-color);
           font-size: 5em;
         }
 
+        .msg-item-img-one {
+          background-image: url(../../images/academic-affairs/calendar.svg);
+          width: 120px;
+          height: 100px;
+          background-repeat: no-repeat;
+        }
+        .msg-item-img-two {
+          background-image: url(../../images/academic-affairs/document.svg);
+          width: 120px;
+          height: 100px;
+          background-repeat: no-repeat;
+        }
         &:hover {
           background-color: var(--main-color);
           border-color: var(--main-color);
           h2 {
             color: #fff;
           }
-          i {
-            color: #fff;
+          .msg-item-img-one {
+            background-image: url(../../images/academic-affairs/calendar-w.png);
+          }
+          .msg-item-img-two {
+            background-image: url(../../images/academic-affairs/document-w.png);
           }
         }
       }
@@ -1509,7 +1524,13 @@ img {
           margin-left: 0;
           margin-right: auto;
           background-image: none;
-          background-image: url(../../images/admission/arrow-down.svg);
+
+          content: "\f078";
+          font-family: "Font Awesome 6 Free";
+          font-weight: 900;
+          color: var(--secondary-color);
+          font-size: 1.3rem;
+          transition: 0.3s all ease;
         }
         h3 {
           color: var(--secondary-color);
@@ -1522,8 +1543,18 @@ img {
         &:focus {
           box-shadow: none;
         }
+        &:hover {
+          &::after {
+            color: var(--main-color);
+          }
+        }
         &.collapsed {
           background-color: #f3f3f3;
+          &:hover {
+            &::after {
+              color: var(--main-color);
+            }
+          }
         }
         &:not(.collapsed) {
           background-color: #f3f3f3;
