@@ -1249,3 +1249,195 @@ img {
     }
   }
 }
+.graduates__wrapper {
+  padding-top: 6rem;
+  .banner {
+    min-height: 50vh;
+    background-image: url(../../images/graduates/banner.png);
+    background-size: cover;
+    background-position: center center;
+    h1 {
+      background-color: rgba(0, 130, 199, 0.7);
+      width: 84%;
+      left: 0;
+      border-top-right-radius: 20px;
+      font-weight: 600;
+      border: 1px solid var(--main-color);
+      @media (min-width: 2000px) {
+        width: 81%;
+      }
+    }
+  }
+  .about-college {
+    overflow: hidden;
+    .right-layer {
+      z-index: -9999;
+    }
+    .left-layer {
+      width: 30%;
+      top: -13rem !important;
+      left: -9rem;
+      z-index: -99999;
+    }
+    h2 {
+      font-weight: 600;
+    }
+    .about-college-desc {
+      p {
+        font-size: 1.3rem;
+        color: var(--gray);
+        text-align: justify;
+        font-weight: 500;
+        @media (max-width: 575px) {
+          font-size: 1.1rem;
+        }
+      }
+    }
+    .about-college-img {
+      width: 80%;
+      .about-layer {
+        top: -3rem;
+        left: -2rem;
+        z-index: -1;
+      }
+    }
+  }
+  .registration-and-submision {
+    background-image: url(../../images/graduates/submission.png);
+    h2 {
+      font-weight: 600;
+    }
+    p {
+      color: var(--gray);
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: 500;
+      width: 60%;
+      margin: auto;
+      @media (max-width: 575px) {
+        font-size: 1.1rem;
+        width: 90%;
+      }
+    }
+    .btn-container {
+      width: 100%;
+      button {
+        background-color: var(--secondary-color);
+        font-size: 35px;
+        font-weight: bold;
+
+        border-radius: 17px;
+        border-start-end-radius: 0;
+        width: 60%;
+
+        @media (max-width: 768px) {
+          width: 90%;
+        }
+
+        &:hover {
+          background-color: var(--main-color);
+        }
+      }
+    }
+  }
+}
+.academic_affairs__wrapper {
+  padding-top: 6rem;
+  .banner {
+    min-height: 60vh;
+    background-image: url(../../images/academic-affairs/banner.png);
+    background-position: center center;
+    background-size: cover;
+    h1 {
+      background-color: rgba(0, 130, 199, 0.7);
+      width: 84%;
+      left: 0;
+      border-top-right-radius: 20px;
+      font-weight: 600;
+      border: 1px solid var(--main-color);
+      @media (min-width: 2000px) {
+        width: 81%;
+      }
+    }
+  }
+  .academic-calendar {
+    overflow: hidden;
+    .right-layer {
+      z-index: -9999;
+    }
+    .left-layer {
+      width: 30%;
+      top: -13rem !important;
+      left: -9rem;
+      z-index: -99999;
+    }
+    .desc {
+      color: var(--gray);
+      font-weight: 500;
+      font-size: 1.2rem;
+      @media (max-width: 575px) {
+        font-size: 1.1rem;
+      }
+    }
+    .college-message {
+      width: 75%;
+      margin: auto;
+      @media (max-width: 1400px) {
+        width: 100%;
+      }
+      .message-item {
+        background-color: #e3f1f0;
+        width: 90%;
+        margin: auto;
+        border-radius: 20px;
+        border-top-right-radius: 0;
+        border: 8px solid #c3dec2;
+        @media (max-width: 1400px) {
+          width: 100%;
+        }
+        h2 {
+          color: var(--main-color);
+          font-weight: 600;
+        }
+      }
+    }
+  }
+  .registration-and-submision {
+    background-image: url(../../images/graduates/submission.png);
+    h2 {
+      font-weight: 600;
+    }
+    p {
+      color: var(--gray);
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: 500;
+      width: 60%;
+      margin: auto;
+      @media (max-width: 575px) {
+        font-size: 1.1rem;
+        width: 90%;
+      }
+    }
+    .btn-container {
+      width: 100%;
+      button {
+        background-color: var(--secondary-color);
+        font-size: 35px;
+        font-weight: bold;
+
+        border-radius: 17px;
+        border-start-end-radius: 0;
+        width: 60%;
+
+        @media (max-width: 768px) {
+          width: 90%;
+        }
+
+        &:hover {
+          background-color: var(--main-color);
+        }
+      }
+    }
+  }
+}
