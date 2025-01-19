@@ -209,3 +209,16 @@ window.addEventListener("load", function (e) {
     }, Math.max(0, minLoadTime - (performance.now() - loadStart)));
   }
 });
+
+// accordion in admission and resgistration page
+document.querySelectorAll(".accordion-collapse").forEach((collapse) => {
+  collapse.addEventListener("show.bs.collapse", function () {
+    const accordionItem = this.closest(".accordion-item");
+    accordionItem.style.borderRight = "7px solid #3ab64b";
+  });
+
+  collapse.addEventListener("hide.bs.collapse", function () {
+    const accordionItem = this.closest(".accordion-item");
+    accordionItem.style.borderRight = "7px solid transparent";
+  });
+});

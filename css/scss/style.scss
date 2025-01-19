@@ -1392,12 +1392,166 @@ img {
         border-radius: 20px;
         border-top-right-radius: 0;
         border: 8px solid #c3dec2;
+        transition: 0.3s all ease;
         @media (max-width: 1400px) {
           width: 100%;
         }
         h2 {
           color: var(--main-color);
           font-weight: 600;
+        }
+        i {
+          color: var(--main-color);
+          font-size: 5em;
+        }
+
+        &:hover {
+          background-color: var(--main-color);
+          border-color: var(--main-color);
+          h2 {
+            color: #fff;
+          }
+          i {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .registration-and-submision {
+    background-image: url(../../images/graduates/submission.png);
+    h2 {
+      font-weight: 600;
+    }
+    p {
+      color: var(--gray);
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: 500;
+      width: 60%;
+      margin: auto;
+      @media (max-width: 575px) {
+        font-size: 1.1rem;
+        width: 90%;
+      }
+    }
+    .btn-container {
+      width: 100%;
+      button {
+        background-color: var(--secondary-color);
+        font-size: 35px;
+        font-weight: bold;
+
+        border-radius: 17px;
+        border-start-end-radius: 0;
+        width: 60%;
+
+        @media (max-width: 768px) {
+          width: 90%;
+        }
+
+        &:hover {
+          background-color: var(--main-color);
+        }
+      }
+    }
+  }
+}
+
+.admission_and_registration__wrapper {
+  padding-top: 6rem;
+  .banner {
+    min-height: 60vh;
+    background-image: url(../../images/admission/banner.png);
+    background-position: center center;
+    background-size: cover;
+    h1 {
+      background-color: rgba(0, 130, 199, 0.7);
+      width: 84%;
+      left: 0;
+      border-top-right-radius: 20px;
+      font-weight: 600;
+      border: 1px solid var(--main-color);
+      @media (min-width: 2000px) {
+        width: 81%;
+      }
+    }
+  }
+  .admission_and_registration_desc {
+    overflow: hidden;
+    .right-layer {
+      z-index: -9999;
+    }
+    .left-layer {
+      width: 30%;
+      top: -13rem !important;
+      left: -9rem;
+      z-index: -99999;
+    }
+    .desc {
+      color: var(--gray);
+      font-weight: 500;
+      font-size: 1.2rem;
+      @media (max-width: 575px) {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .general-standards {
+    .accordion {
+      .accordion-item {
+        border: none;
+        margin-bottom: 1rem;
+      }
+      .accordion-button {
+        border: 0;
+        &::after {
+          margin-left: 0;
+          margin-right: auto;
+          background-image: none;
+          background-image: url(../../images/admission/arrow-down.svg);
+        }
+        h3 {
+          color: var(--secondary-color);
+          font-weight: 600;
+          font-size: 1.5rem;
+          @media (max-width: 575px) {
+            font-size: 1rem;
+          }
+        }
+        &:focus {
+          box-shadow: none;
+        }
+        &.collapsed {
+          background-color: #f3f3f3;
+        }
+        &:not(.collapsed) {
+          background-color: #f3f3f3;
+
+          box-shadow: none;
+        }
+        text-align: right;
+      }
+      .accordion-body {
+        ul {
+          li {
+            font-size: 1.1rem;
+            color: var(--gray);
+            font-weight: 500;
+            padding-inline-start: 2rem;
+            position: relative;
+            &::before {
+              content: "";
+              position: absolute;
+              width: 10px;
+              height: 10px;
+              background-color: var(--secondary-color);
+              right: 0;
+              top: 50%;
+              transform: translateY(-50%);
+              border-radius: 50%;
+            }
+          }
         }
       }
     }

@@ -1222,6 +1222,7 @@ img {
   border-radius: 20px;
   border-top-right-radius: 0;
   border: 8px solid #c3dec2;
+  transition: 0.3s all ease;
 }
 @media (max-width: 1400px) {
   .academic_affairs__wrapper .academic-calendar .college-message .message-item {
@@ -1231,6 +1232,20 @@ img {
 .academic_affairs__wrapper .academic-calendar .college-message .message-item h2 {
   color: var(--main-color);
   font-weight: 600;
+}
+.academic_affairs__wrapper .academic-calendar .college-message .message-item i {
+  color: var(--main-color);
+  font-size: 5em;
+}
+.academic_affairs__wrapper .academic-calendar .college-message .message-item:hover {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+.academic_affairs__wrapper .academic-calendar .college-message .message-item:hover h2 {
+  color: #fff;
+}
+.academic_affairs__wrapper .academic-calendar .college-message .message-item:hover i {
+  color: #fff;
 }
 .academic_affairs__wrapper .registration-and-submision {
   background-image: url(../../images/graduates/submission.png);
@@ -1269,6 +1284,142 @@ img {
   }
 }
 .academic_affairs__wrapper .registration-and-submision .btn-container button:hover {
+  background-color: var(--main-color);
+}
+
+.admission_and_registration__wrapper {
+  padding-top: 6rem;
+}
+.admission_and_registration__wrapper .banner {
+  min-height: 60vh;
+  background-image: url(../../images/admission/banner.png);
+  background-position: center center;
+  background-size: cover;
+}
+.admission_and_registration__wrapper .banner h1 {
+  background-color: rgba(0, 130, 199, 0.7);
+  width: 84%;
+  left: 0;
+  border-top-right-radius: 20px;
+  font-weight: 600;
+  border: 1px solid var(--main-color);
+}
+@media (min-width: 2000px) {
+  .admission_and_registration__wrapper .banner h1 {
+    width: 81%;
+  }
+}
+.admission_and_registration__wrapper .admission_and_registration_desc {
+  overflow: hidden;
+}
+.admission_and_registration__wrapper .admission_and_registration_desc .right-layer {
+  z-index: -9999;
+}
+.admission_and_registration__wrapper .admission_and_registration_desc .left-layer {
+  width: 30%;
+  top: -13rem !important;
+  left: -9rem;
+  z-index: -99999;
+}
+.admission_and_registration__wrapper .admission_and_registration_desc .desc {
+  color: var(--gray);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+@media (max-width: 575px) {
+  .admission_and_registration__wrapper .admission_and_registration_desc .desc {
+    font-size: 1.1rem;
+  }
+}
+.admission_and_registration__wrapper .general-standards .accordion .accordion-item {
+  border: none;
+  margin-bottom: 1rem;
+}
+.admission_and_registration__wrapper .general-standards .accordion .accordion-button {
+  border: 0;
+  text-align: right;
+}
+.admission_and_registration__wrapper .general-standards .accordion .accordion-button::after {
+  margin-left: 0;
+  margin-right: auto;
+  background-image: none;
+  background-image: url(../../images/admission/arrow-down.svg);
+}
+.admission_and_registration__wrapper .general-standards .accordion .accordion-button h3 {
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+@media (max-width: 575px) {
+  .admission_and_registration__wrapper .general-standards .accordion .accordion-button h3 {
+    font-size: 1rem;
+  }
+}
+.admission_and_registration__wrapper .general-standards .accordion .accordion-button:focus {
+  box-shadow: none;
+}
+.admission_and_registration__wrapper .general-standards .accordion .accordion-button.collapsed {
+  background-color: #f3f3f3;
+}
+.admission_and_registration__wrapper .general-standards .accordion .accordion-button:not(.collapsed) {
+  background-color: #f3f3f3;
+  box-shadow: none;
+}
+.admission_and_registration__wrapper .general-standards .accordion .accordion-body ul li {
+  font-size: 1.1rem;
+  color: var(--gray);
+  font-weight: 500;
+  padding-inline-start: 2rem;
+  position: relative;
+}
+.admission_and_registration__wrapper .general-standards .accordion .accordion-body ul li::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--secondary-color);
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+.admission_and_registration__wrapper .registration-and-submision {
+  background-image: url(../../images/graduates/submission.png);
+}
+.admission_and_registration__wrapper .registration-and-submision h2 {
+  font-weight: 600;
+}
+.admission_and_registration__wrapper .registration-and-submision p {
+  color: var(--gray);
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 500;
+  width: 60%;
+  margin: auto;
+}
+@media (max-width: 575px) {
+  .admission_and_registration__wrapper .registration-and-submision p {
+    font-size: 1.1rem;
+    width: 90%;
+  }
+}
+.admission_and_registration__wrapper .registration-and-submision .btn-container {
+  width: 100%;
+}
+.admission_and_registration__wrapper .registration-and-submision .btn-container button {
+  background-color: var(--secondary-color);
+  font-size: 35px;
+  font-weight: bold;
+  border-radius: 17px;
+  border-start-end-radius: 0;
+  width: 60%;
+}
+@media (max-width: 768px) {
+  .admission_and_registration__wrapper .registration-and-submision .btn-container button {
+    width: 90%;
+  }
+}
+.admission_and_registration__wrapper .registration-and-submision .btn-container button:hover {
   background-color: var(--main-color);
 }
 
