@@ -1748,3 +1748,133 @@ img {
     }
   }
 }
+
+.news_events__wrapper {
+  padding-top: 6rem;
+  .banner {
+    min-height: 50vh;
+    background-image: url(../../images/news-and-events/banner.png);
+    background-position: center center;
+    background-size: cover;
+    h1 {
+      background-color: rgba(0, 130, 199, 0.7);
+      width: 84%;
+      left: 0;
+      border-top-right-radius: 20px;
+      font-weight: 600;
+      border: 1px solid var(--main-color);
+      @media (min-width: 2000px) {
+        width: 81%;
+      }
+    }
+  }
+  .event-desc {
+    overflow: hidden;
+    .right-layer {
+      z-index: -9999;
+    }
+    .left-layer {
+      width: 30%;
+      top: -17rem !important;
+      left: -12rem;
+      z-index: -99999;
+    }
+
+    .desc {
+      color: var(--gray);
+      font-weight: 500;
+      font-size: 1.2rem;
+      @media (max-width: 575px) {
+        font-size: 1.1rem;
+      }
+    }
+  }
+  .events-cards {
+    background-color: #edefec;
+    .events-item {
+      .card {
+        border-radius: 26px;
+        border-top-left-radius: 0;
+        overflow: hidden;
+        border: 0;
+
+        .calendar {
+          img {
+            height: 20px;
+          }
+
+          h5 {
+            font-size: 19px;
+          }
+        }
+
+        .card-title {
+          font-weight: 600;
+          line-height: 0.9;
+        }
+
+        .card-desc {
+          color: #9d9d9d;
+          font-weight: 500;
+        }
+
+        .card-link {
+          color: var(--secondary-color);
+          transition: 0.3s all ease;
+          float: left;
+          font-weight: bold;
+
+          &:hover {
+            color: var(--main-color);
+          }
+        }
+      }
+    }
+  }
+  .pagination {
+    ul {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      flex-direction: row-reverse;
+      li {
+        a {
+          font-size: 1.5rem;
+          font-weight: 500;
+          color: var(--secondary-color);
+
+          transition: 0.3s all ease;
+
+          &:hover {
+            color: var(--main-color);
+          }
+        }
+        .btn {
+          background-color: #97ce9d;
+          color: #fff;
+          transition: 0.3s all ease;
+          border-radius: 8px;
+
+          &:hover {
+            background-color: var(--main-color);
+          }
+        }
+        &:nth-of-type(1) {
+          .btn {
+            border-top-right-radius: 0;
+          }
+        }
+        &:last-of-type {
+          .btn {
+            border-top-left-radius: 0;
+          }
+        }
+        &:nth-of-type(6) {
+          a {
+            color: var(--gray);
+          }
+        }
+      }
+    }
+  }
+}
