@@ -1668,14 +1668,10 @@ img {
       }
       p {
         color: var(--gray);
-        font-size: 1.2rem;
+        font-size: 1.3rem;
         font-weight: 500;
       }
-      &.center {
-        p {
-          font-size: 2rem;
-        }
-      }
+     
     }
   }
   .map {
@@ -1879,9 +1875,9 @@ img {
   }
 }
 .jobs__wrapper {
-  padding-top: 6rem;
+  padding-top: 2rem;
   .banner {
-    min-height: 50vh;
+    min-height: 60vh;
     background-image: url(../../images/jobs/banner.png);
     background-position: center 4rem;
     background-size: cover;
@@ -1899,7 +1895,7 @@ img {
     }
   }
   .jobs-desc {
-    padding: 60px 0;
+    padding: 100px 0;
     overflow: hidden;
     background-color: #edefec;
     @media (max-width: 575px) {
@@ -2046,6 +2042,101 @@ img {
           font-size: 1.3rem;
         }
       }
+      p {
+        font-weight: 500;
+        color: var(--gray);
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+.college-board__wrapper {
+  padding-top: 6rem;
+  .banner {
+    min-height: 50vh;
+    background-image: url(../../images/college-board/banner.png);
+    background-size: cover;
+    background-position: center 4rem;
+    background-repeat: no-repeat;
+    h1 {
+      background-color: rgba(0, 130, 199, 0.7);
+      width: 84%;
+      left: 0;
+      border-top-right-radius: 20px;
+      font-weight: 600;
+      border: 1px solid var(--main-color);
+      @media (min-width: 2000px) {
+        width: 81%;
+      }
+    }
+  }
+  .members {
+    overflow: hidden;
+    .right-layer {
+      z-index: -9999;
+    }
+    .left-layer {
+      width: 30%;
+      top: -13rem !important;
+      left: -9rem;
+      z-index: -99999;
+    }
+    .item {
+      background-color: #e5f0f2;
+      border-radius: 10px;
+      border-top-right-radius: 0;
+      width: 80%;
+      h3 {
+        font-size: 1.4rem;
+        font-weight: 600;
+        @media (max-width: 1200px) {
+          font-size: 1.3rem;
+        }
+      }
+      p {
+        font-weight: 500;
+        color: var(--gray);
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+.research_unit__wrapper {
+  padding-top: 2rem;
+  .banner {
+    min-height: 60vh;
+    background-image: url(../../images/research-unit/banner.png);
+    background-size: cover;
+    background-position: center 4rem;
+    background-repeat: no-repeat;
+    h1 {
+      background-color: rgba(0, 130, 199, 0.7);
+      width: 84%;
+      left: 0;
+      border-top-right-radius: 20px;
+      font-weight: 600;
+      border: 1px solid var(--main-color);
+      @media (min-width: 2000px) {
+        width: 81%;
+      }
+    }
+  }
+  .units {
+ 
+    overflow: hidden;
+    .right-layer {
+      z-index: -9999;
+    }
+    .left-layer {
+      width: 30%;
+      top: -13rem !important;
+      left: -9rem;
+      z-index: -99999;
+    }
+    .unit {
+      justify-content: center;
       p {
         font-weight: 500;
         color: var(--gray);
