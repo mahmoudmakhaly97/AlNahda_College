@@ -1976,4 +1976,161 @@ img {
   font-size: 1.1rem;
 }
 
+.hospitals_management__wrapper {
+  padding-top: 6rem;
+}
+.hospitals_management__wrapper .banner {
+  min-height: 50vh;
+  background-image: url(../../images/hospitals-management/banner.png);
+  background-size: cover;
+  background-position: center center;
+}
+.hospitals_management__wrapper .banner h1 {
+  background-color: rgba(0, 130, 199, 0.7);
+  width: 84%;
+  left: 0;
+  border-top-right-radius: 20px;
+  font-weight: 600;
+  border: 1px solid var(--main-color);
+}
+@media (min-width: 2000px) {
+  .hospitals_management__wrapper .banner h1 {
+    width: 81%;
+  }
+}
+@media (max-width: 575px) {
+  .hospitals_management__wrapper .banner h1 {
+    font-size: 1rem;
+  }
+}
+.hospitals_management__wrapper .about-college {
+  overflow: hidden;
+}
+.hospitals_management__wrapper .about-college .right-layer {
+  z-index: -9999;
+}
+.hospitals_management__wrapper .about-college .left-layer {
+  width: 30%;
+  top: -13rem !important;
+  left: -9rem;
+  z-index: -99999;
+}
+.hospitals_management__wrapper .about-college h2 {
+  font-weight: 600;
+}
+.hospitals_management__wrapper .about-college .about-college-desc p {
+  font-size: 1.3rem;
+  color: var(--gray);
+  text-align: justify;
+  font-weight: 500;
+}
+@media (max-width: 575px) {
+  .hospitals_management__wrapper .about-college .about-college-desc p {
+    font-size: 1.1rem;
+  }
+}
+.hospitals_management__wrapper .about-college .about-college-img {
+  width: 80%;
+}
+.hospitals_management__wrapper .about-college .about-college-img .about-layer {
+  top: -3rem;
+  left: -2rem;
+  z-index: -1;
+}
+.hospitals_management__wrapper .college-message {
+  width: 75%;
+  margin: auto;
+}
+@media (max-width: 1400px) {
+  .hospitals_management__wrapper .college-message {
+    width: 100%;
+  }
+}
+.hospitals_management__wrapper .college-message .message-item {
+  background-color: #e3f1f0;
+  width: 90%;
+  margin: auto;
+  border-radius: 20px;
+  border-top-right-radius: 0;
+  border: 8px solid #c3dec2;
+  transition: 0.3s all ease;
+}
+@media (max-width: 1400px) {
+  .hospitals_management__wrapper .college-message .message-item {
+    width: 100%;
+  }
+}
+.hospitals_management__wrapper .college-message .message-item h2 {
+  color: var(--main-color);
+  font-weight: 600;
+}
+.hospitals_management__wrapper .college-message .message-item img {
+  color: var(--main-color);
+  font-size: 5em;
+}
+.hospitals_management__wrapper .college-message .message-item .msg-item-img-one {
+  background-image: url(../../images/hospitals-management/study.png);
+  width: 120px;
+  height: 110px;
+  background-repeat: no-repeat;
+}
+.hospitals_management__wrapper .college-message .message-item .msg-item-img-two {
+  background-image: url(../../images/academic-affairs/document.svg);
+  width: 130px;
+  height: 110px;
+  background-repeat: no-repeat;
+}
+.hospitals_management__wrapper .college-message .message-item:hover {
+  background-color: var(--main-color);
+  border-color: var(--main-color);
+}
+.hospitals_management__wrapper .college-message .message-item:hover h2 {
+  color: #fff;
+}
+.hospitals_management__wrapper .college-message .message-item:hover .msg-item-img-one {
+  background-image: url(../../images/hospitals-management/study-w.png);
+}
+.hospitals_management__wrapper .college-message .message-item:hover .msg-item-img-two {
+  background-image: url(../../images/academic-affairs/document-w.png);
+}
+.hospitals_management__wrapper .registration-and-submision {
+  background-image: url(../../images/graduates/submission.png);
+}
+.hospitals_management__wrapper .registration-and-submision h2 {
+  font-weight: 600;
+}
+.hospitals_management__wrapper .registration-and-submision p {
+  color: var(--gray);
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 500;
+  width: 60%;
+  margin: auto;
+}
+@media (max-width: 575px) {
+  .hospitals_management__wrapper .registration-and-submision p {
+    font-size: 1.1rem;
+    width: 90%;
+  }
+}
+.hospitals_management__wrapper .registration-and-submision .btn-container {
+  width: 100%;
+}
+.hospitals_management__wrapper .registration-and-submision .btn-container button {
+  background-color: var(--secondary-color);
+  font-size: 35px;
+  font-weight: bold;
+  border-radius: 17px;
+  border-start-end-radius: 0;
+  width: 60%;
+}
+@media (max-width: 768px) {
+  .hospitals_management__wrapper .registration-and-submision .btn-container button {
+    width: 90%;
+  }
+}
+.hospitals_management__wrapper .registration-and-submision .btn-container button:hover {
+  background-color: var(--main-color);
+}
+
 /*# sourceMappingURL=style.css.map */

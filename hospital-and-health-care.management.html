@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital and health care management</title>
+
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/libraries/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="css/libraries/owl.theme.default.min.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/libraries/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/libraries/aos.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      id="ps-general-css"
+      href="css/libraries/ps-general.rtl.css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      id="bdt-uikit-css"
+      href="css/libraries/bdt-uikit.rtl.css"
+      media="all"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Loader -->
+    <!-- <div id="loader"></div> -->
+    <!-- start navbar  -->
+    <div class="navbar fixed-top w-100 pt-3 pb-3 pb-xl-0 ftco_navbar">
+      <div class="container">
+        <div class="row w-100 align-items-center">
+          <div class="col-xl-2 col">
+            <div class="logo-container">
+              <img
+                src="./images/navbar/logo.svg"
+                alt="nav-logo"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-xl-10 col d-flex justify-content-end">
+            <div class="links-container d-none d-xl-flex flex-column gap-4">
+              <div class="topbar-links">
+                <ul class="d-flex align-items-center gap-4 justify-content-end">
+                  <li>
+                    <a href="#" class="text-secondary-color">
+                      الاخبار والفعاليات
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-secondary-color"> اتصل بنا </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-secondary-color"> الوظائف </a>
+                  </li>
+                  <li>
+                    <ul class="me-2 d-flex align-items-center gap-2 social">
+                      <li>
+                        <a href="#">EN</a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-brands fa-instagram"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="navbar-links">
+                <ul class="d-flex align-items-center gap-5">
+                  <li class="nav-item dropdown">
+                    <a href="#" class="nav-link px-0"> الرئيسية </a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link px-0" href="#"> ادارة الكلية </a>
+                    <!-- <ul class="dropdown-menu">
+                                      <li>
+                                        <a class="dropdown-item" href="#"> الهيكل التنظيمي </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="#">
+                                          اللجنة الاستشارية
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="#"> وحدة الأبحاث </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="#">العميد </a>
+                                      </li>
+                                      <li>
+                                        <a class="dropdown-item" href="#">مجلس الكلية </a>
+                                      </li>
+                                    </ul> -->
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link px-0 dropdown-toggle" href="#">
+                      عن الكلية
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">معلومات الكلية </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"> الرؤية والرسالة </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"> جولة أفتراضية</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link px-0 dropdown-toggle" href="#">
+                      الطالب
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          الشئون الاكاديمية
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          البرامج الاكاديمية
+                        </a>
+                      </li>
+                      <li><a class="dropdown-item" href="#"> الخريجون </a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link px-0 dropdown-toggle" href="#">
+                      البرامج الأكاديمية
+                    </a>
+                    <ul class="dropdown-menu academic-program-dropdown-1">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          برنامج البكالوريوس في علوم الصيدلة
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          برنامج البكالوريوس في التمريض
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          برنامج البكالوريوس في طب الصيدلة
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          برنامج البكالوريوس في طب العلاج الطبيعي
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          برنامج البكالوريوس في ادارة المستشفيات والرعاية الصحية
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          برنامج البكالوريوس في المعلوماتية الحيوية
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a href="#" class="nav-link px-0"> القبول والتسجيل </a>
+                  </li>
+
+                  <li class="nav-item dropdown e-services">
+                    <a
+                      class="nav-link px-0 dropdown-toggle px-3 d-block text-white"
+                      href="#"
+                    >
+                      الخدمات الالكترونية
+                    </a>
+                    <ul class="dropdown-menu academic-program-dropdown-2">
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          نظام القبول والتسجيل
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#"> بوابة الطالب </a>
+                      </li>
+
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          نظام التعليم الالكتروني والتعلم عن بعد
+                        </a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">
+                          المكتبة السعودية الرقميه
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- start offcanvas  -->
+            <i
+              class="fa-solid fa-bars fa-lg text-main-color pointer d-xl-none"
+              data-bs-toggle="offcanvas"
+              data-bs-target=".offcanvasRight"
+            ></i>
+            <div class="offcanvas offcanvas-end offcanvasRight">
+              <div
+                class="offcanvas-header d-flex justify-content-between align-items-center"
+              >
+                <h5 id="offcanvasRightLabel">
+                  <img src="images/navbar/logo.svg" alt="" />
+                </h5>
+                <i
+                  class="fa-solid fa-square-xmark fa-xl text-main-color pointer"
+                  data-bs-dismiss="offcanvas"
+                ></i>
+              </div>
+              <div class="offcanvas-body">
+                <div class="d-flex flex-column justify-content-between h-100">
+                  <div class="navbar-links">
+                    <ul class="d-flex flex-column align-items-center gap-3">
+                      <li>
+                        <a href="#"> الرئيسية </a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link px-0 dropdown-toggle"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                        >
+                          ادارة الكلية
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              الهيكل التنظيمي
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              اللجنة الاستشارية
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"> وحدة الأبحاث </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"> العميد </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"> مجلش الكلية </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link px-0 dropdown-toggle"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                        >
+                          عن الكلية
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#"
+                              >معلومات الكلية
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              الرؤية والرسالة
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">جولة أفتراضية</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link px-0 dropdown-toggle"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                        >
+                          الطالب
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              الشئون الأكاديمية
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              البرامج الأكاديمية
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">الخريجون </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a
+                          class="nav-link px-0 dropdown-toggle"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                        >
+                          البرامج الأكاديمية
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              برنامج البكالوريوس في علوم الصيدلة
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              برنامج البكالوريوس في التمريض
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              برنامج البكالوريوس في طب الصيدلة
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              برنامج البكالوريوس في طب العلاج الطبيعي
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              برنامج البكالوريوس في ادارة المستشفيات والرعاية
+                              الصحية
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              برنامج البكالوريوس في المعلوماتية الحيوية
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#"> الاخبار والفعاليات </a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <!--
+                                            <a
+                                              class="py-2 px-3 d-block text-white e-gate"
+                                              href="#"
+                                              data-bs-toggle="dropdown"
+                                            >
+                                              البرامج الأكاديمية
+                                            </a> -->
+                        <a
+                          class="nav-link py-2 px-3 d-block text-white dropdown-toggle e-gate"
+                          href="#"
+                          data-bs-toggle="dropdown"
+                        >
+                          الخدمات الالكترونية
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              نظام القبول والتسجيل
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#"> بوابة الطالب </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              نظام التعليم الالكتروني والتعلم عن بعد
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              المكتبة الرقمية السعودية
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="topbar-links d-flex flex-column gap-4">
+                    <ul
+                      class="d-flex align-items-center justify-content-center gap-3"
+                    >
+                      <li>
+                        <a href="#" class="text-secondary-color">
+                          الاخبار والفعاليات
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-secondary-color"> اتصل بنا </a>
+                      </li>
+                      <li>
+                        <a href="#" class="text-secondary-color"> الوظائف </a>
+                      </li>
+                      <li></li>
+                    </ul>
+                    <ul
+                      class="me-2 d-flex justify-content-center align-items-center gap-2 social"
+                    >
+                      <li>
+                        <a href="#">EN</a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-solid fa-magnifying-glass"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-brands fa-whatsapp"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-brands fa-instagram"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end offcanvas  -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end navbar  -->
+
+    <div class="hospitals_management__wrapper">
+      <!-- start banner -->
+      <div class="banner position-relative">
+        <h1 class="position-absolute text-white bottom-0 px-2 px-md-4 py-2">
+          برنامج ادارة المستشفيات و الرعاية الصحية
+        </h1>
+      </div>
+      <!-- end banner -->
+      <!-- start about college -->
+      <div class="about-college py-5 position-relative">
+        <img
+          src="images/about/right-layer.png"
+          alt="right-layer"
+          class="d-none d-lg-block position-absolute img-fluid top-0 end-0 rellax right-layer"
+          data-rellax-speed="2"
+        />
+        <img
+          src="images/about/Vector Smart Object (16).svg"
+          alt="left-layer"
+          class="d-none d-lg-block position-absolute img-fluid rellax left-layer"
+          data-rellax-speed="-2"
+        />
+        <div class="container">
+          <div class="about-college-desc">
+            <h2
+              class="text-main-color pb-3"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              نبذة عن البرنامج
+            </h2>
+            <p data-aos="fade-up" data-aos-delay="150">
+              يهدف البرنامج الى تطوير الطلاب ليصبحوا قادة المستقبل، وليحققوا
+              النجاح المهني في مجال الرعاية الصحية سريعة النمو اليوم.
+            </p>
+            <p class="mb-5" data-aos="fade-up" data-aos-delay="200">
+              يحصل الطالب/ة على درجة البكالوريوس في إدارة المستشفيات والرعاية
+              الصحية الحيوية بعد أن يكمل أربع سنوات دراسية .
+            </p>
+          </div>
+
+          <div class="row flex-column-reverse flex-lg-row">
+            <div class="col-lg-8">
+              <div
+                class="about-college-desc"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <p class="mb-4" data-aos="fade-up" data-aos-delay="250">
+                  صمم البرنامج من أجل إثراء الطالب بمعرفة معمقة ومهارات اتخاذ
+                  القرارات في المؤسسة الصحية للقيام بأدوار إدارية عليا على مستوى
+                  المشرفين ومديري مؤسسات الخدمات الصحية، وفهم وتحديد المعايير
+                  القانونية والأخلاقية التي تحكم السلوك المهني في مجال الخدمات
+                  الصحية، خصوصاً المتعلقة بمهنة الإدارة الصحية.
+                </p>
+                <p data-aos="fade-up" data-aos-delay="300">
+                  الإدارة الصحية هي الأكثر تعقيدا لأنها تتعامل مع حياة الناس
+                  والخدمات الصحية، وترتبط مباشرة بمؤشر التنمية الاجتماعية للبلد
+                  والتواصل اجتماعي. كل بلد يواجه تحديات مختلفة مثل الاجتماعية،
+                  الثقافية، الدينية والمواقف السياسية ولكن التحديات الصحية هي
+                  الأكثر حيث تؤثر عليها التكاليف المتزايدة، التكنولوجيا المتغيرة
+                  بسرعة، القضايا الأخلاقية المعقدة، المرضى الذين لا يملكون تأمين
+                  صحي لصحتهم، ومطالب الجودة للمستهلكين. هذه التحديات مختلفة
+                  وتتراوح بين:
+                </p>
+
+                <ul
+                  class="mb-3 mb-lg-5"
+                  data-aos="fade-up"
+                  data-aos-delay="350"
+                >
+                  <li>
+                    <p>
+                      • من يستحق الأولوية في الرعاية الأولية أو الثانوية أو
+                      الثالثة؟
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      • كيف يمكننا تقديم الرعاية الصحية للمسنين و أصحاب الدخل
+                      المحدود على أساس متساو؟
+                    </p>
+                  </li>
+                  <li>
+                    <p>• هل يوفر نظام الرعاية الصحية أفضل جودة للرعاية؟</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div
+                class="about-college-img position-relative my-3 my-lg-0 m-auto"
+              >
+                <img
+                  src="images/hospitals-management/nurse.png"
+                  class="img-fluid"
+                  alt="nurse"
+                />
+                <img
+                  src="images/about-college/about-layer.png"
+                  class="img-fluid position-absolute about-layer"
+                  alt="about-layer"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="about-college-desc">
+                <h4
+                  class="pt-3 text-secondary-color"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  مجالات العمل المتاحة للخريجين :
+                </h4>
+                <ul class="mb-4">
+                  <li data-aos="fade-up" data-aos-delay="150">
+                    <p>– إ دارة منظمات الرعاية الصحية المحلية والعالمية.</p>
+                  </li>
+                  <li data-aos="fade-up" data-aos-delay="200">
+                    <p>
+                      – العمل كاختصاصييـن في الإدارة الصحية، وإدارة الخدمات
+                      لإدارة وتشغيل المؤسسات الصحية.
+                    </p>
+                  </li>
+                  <li data-aos="fade-up" data-aos-delay="250">
+                    <p>
+                      – العمل في كوادر الإدارة الوسطى (التخطيطية) والتشغيلية في
+                      المستشفيات الكبرى ومؤسسات التخطيط الصحي، والمجمعات الطبية،
+                      ومؤسسات الرعاية الصحية، والمراكز الطبية المتخصصة، وشركات
+                      التأمين الطبي.
+                    </p>
+                  </li>
+                  <li data-aos="fade-up" data-aos-delay="300">
+                    <p>
+                      – العمل مساعدين لمديري المستشفيات، أو رؤساء إدارات الموارد
+                      البشرية الصحية، وإدارات المواد والتسويق الصحي، وإدارة
+                      الجودة الصحية.
+                    </p>
+                  </li>
+                </ul>
+                <p data-aos="fade-up" data-aos-delay="350">
+                  يمكن ايضا العمل في وحدات الرعاية الصحية المتخصصة مثل دور رعاية
+                  المسننين ومنظمات الصحة العقلية ومراكز التأهيل والإدارة الصحية
+                  العامة، ومراكز الرعاية الممتدة. يمكن العمل في شركات التوريد
+                  للمستشفيات والشركات الصيدلانية وشركات البرامج الطبية وشركات
+                  الأغذية وشركات التامين. يمكن بعد اكتساب الخبرة لازمه ان يقوم
+                  الخريج بنشاء دار رعاية او مستشفى او شركات الرعاية الصحية
+                  المنزلية للمرضى وكبار السن.
+                </p>
+                <div class="college-message pt-5 pb-4">
+                  <div class="container">
+                    <div class="row g-3 g-lg-5">
+                      <div
+                        class="col-lg-6"
+                        data-aos="fade-up"
+                        data-aos-delay="100"
+                      >
+                        <button
+                          class="message-item py-3 px-3 d-flex align-items-center justify-content-between gap-3"
+                        >
+                          <div class="msg-item-img-one"></div>
+                          <div>
+                            <h2>الخطة الدراسية</h2>
+                            <h2></h2>
+                          </div>
+                        </button>
+                      </div>
+                      <div
+                        class="col-lg-6"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                      >
+                        <button
+                          class="message-item py-3 px-3 d-flex align-items-center justify-content-between gap-3"
+                        >
+                          <div class="msg-item-img-two"></div>
+                          <div>
+                            <h2>دليل</h2>
+                            <h2>الطالب</h2>
+                          </div>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- end about college -->
+      <!-- start registration and submission -->
+      <div class="registration-and-submision py-5">
+        <div class="container d-flex flex-column align-items-center gap-4">
+          <h2 class="text-main-color" data-aos="fade-up" data-aos-delay="10">
+            التسجيل التقديم
+          </h2>
+          <p data-aos="fade-up" data-aos-delay="200">
+            تعتبر عملية التقديم والقبول في كلية النهضة خطوة حيوية للطلاب الذين
+            يسعون لتحقيق حلمهم في مجالات العلوم الطبية. يتوجب على المتقدمين
+            الالتزام بمواعيد نهائية محددة لضمان مراجعة طلباتهم
+          </p>
+          <div
+            class="btn-container d-flex justify-content-center mt-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <button class="btn text-white">ســجــــل الآن</button>
+          </div>
+        </div>
+      </div>
+      <!-- end registration and submission -->
+    </div>
+
+    <!-- start footer -->
+    <div class="footer pt-5 pb-5 pb-lg-0">
+      <div class="container">
+        <div class="row g-4 g-lg-0 align-items-center">
+          <div class="col-lg-4 col-md-6">
+            <div class="logo pb-lg-5">
+              <img src="images/footer/footer-logo.svg" alt="footer-logo" />
+            </div>
+          </div>
+          <div class="col-lg-5 offset-lg-1 col-md-6">
+            <div
+              class="d-flex justify-content-center about-college-wrapper pb-lg-5"
+            >
+              <div
+                class="about-college d-flex flex-column align-items-center text-end"
+              >
+                <div>
+                  <h5 class="text-main-color mb-2 fw-bold">
+                    عن كلــية النهـضـة
+                  </h5>
+                  <p>
+                    تأسست كلية النهضة للصيدلة والعلوم الطبية كجزء من المبادرات
+                    الأكاديمية الرامية لتعزيز التعليم الطبي والبحث في المنطقة.
+                  </p>
+                  <div class="d-flex justify-content-lg-end">
+                    <a
+                      href="#"
+                      class="text-secondary-color fw-bold px-3 d-block"
+                    >
+                      المزيد
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <div
+              class="contact-us d-flex flex-column align-items-lg-end text-end pb-lg-5"
+            >
+              <div>
+                <h5 class="text-main-color mb-2 fw-bold">تواصل معنا</h5>
+                <h2>
+                  <a href="#" class="text-secondary-color">920014786</a>
+                </h2>
+                <ul class="d-flex gap-2">
+                  <li>
+                    <a href="#">
+                      <img src="images/footer/whatsapp.png" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="images/footer/linkedin.PNG" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="images/footer/twitter.PNG" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="images/footer/instagram.PNG" alt="" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <img src="images/footer/facebook.PNG" alt="" />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end footer -->
+    <!-- start copright -->
+    <div class="copyright bg-main-color">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="right d-flex align-items-center gap-3">
+              <img src="images/copyright/copyright.svg" alt="copyright" />
+              <p class="text-white text-center text-md-end">
+                جميع الحقوق محفوظة لكلية النهضه للصيدلة والعلوم الطبيه 2024 ©
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="left text-center text-md-start">
+              <p class="text-white">Designed & Developed by THEMAGSMEN</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end copright -->
+    <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+    <script src="js/libraries/bootstrap.bundle.min.js"></script>
+    <script src="js/libraries/jquery-3.7.1.min.js"></script>
+    <script src="js/libraries/owl.carousel.min.js"></script>
+    <script src="js/libraries/rellax.min.js"></script>
+    <script src="js/libraries/bdt-uikit.min.js" id="bdt-uikit-js"></script>
+    <script src="js/libraries/aos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
