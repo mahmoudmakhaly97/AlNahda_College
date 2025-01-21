@@ -1909,7 +1909,7 @@ img {
   width: 30%;
   top: -13rem !important;
   left: -9rem;
-  z-index: 9999;
+  z-index: 0;
 }
 .college-board__wrapper .members .item {
   background-color: #e5f0f2;
