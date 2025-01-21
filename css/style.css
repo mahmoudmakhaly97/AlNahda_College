@@ -1777,6 +1777,7 @@ img {
 }
 .dean__wrapper .dean-info {
   overflow: hidden;
+  background-color: #f7f7f7;
 }
 .dean__wrapper .dean-info .right-layer {
   z-index: -9999;
@@ -1844,6 +1845,7 @@ img {
 }
 .advisory_committee__wrapper .members {
   overflow: hidden;
+  background-color: #f7f7f7;
 }
 .advisory_committee__wrapper .members .right-layer {
   z-index: -9999;
@@ -1897,6 +1899,7 @@ img {
   }
 }
 .college-board__wrapper .members {
+  background-color: #f7f7f7;
   overflow: hidden;
 }
 .college-board__wrapper .members .right-layer {
