@@ -1958,13 +1958,13 @@ img {
     overflow: hidden;
     background-color: #f7f7f7;
     .right-layer {
-      z-index: -9999;
+      z-index: 9999;
     }
     .left-layer {
       width: 30%;
       top: -13rem !important;
       left: -9rem;
-      z-index: -99999;
+      z-index: 99999;
     }
     h2 {
       font-weight: 600;
@@ -2025,13 +2025,13 @@ img {
     overflow: hidden;
     background-color: #f7f7f7;
     .right-layer {
-      z-index: -9999;
+      z-index: 9999;
     }
     .left-layer {
       width: 30%;
       top: -13rem !important;
       left: -9rem;
-      z-index: -99999;
+      z-index: 0;
     }
     .item {
       background-color: #e5f0f2;
@@ -2076,13 +2076,13 @@ img {
     background-color: #f7f7f7;
     overflow: hidden;
     .right-layer {
-      z-index: -9999;
+      z-index: 9999;
     }
     .left-layer {
       width: 30%;
       top: -13rem !important;
       left: -9rem;
-      z-index: -99999;
+      z-index: 9999;
     }
     .item {
       background-color: #e5f0f2;

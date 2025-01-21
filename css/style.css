@@ -1780,13 +1780,13 @@ img {
   background-color: #f7f7f7;
 }
 .dean__wrapper .dean-info .right-layer {
-  z-index: -9999;
+  z-index: 9999;
 }
 .dean__wrapper .dean-info .left-layer {
   width: 30%;
   top: -13rem !important;
   left: -9rem;
-  z-index: -99999;
+  z-index: 99999;
 }
 .dean__wrapper .dean-info h2 {
   font-weight: 600;
@@ -1848,13 +1848,13 @@ img {
   background-color: #f7f7f7;
 }
 .advisory_committee__wrapper .members .right-layer {
-  z-index: -9999;
+  z-index: 9999;
 }
 .advisory_committee__wrapper .members .left-layer {
   width: 30%;
   top: -13rem !important;
   left: -9rem;
-  z-index: -99999;
+  z-index: 0;
 }
 .advisory_committee__wrapper .members .item {
   background-color: #e5f0f2;
@@ -1903,13 +1903,13 @@ img {
   overflow: hidden;
 }
 .college-board__wrapper .members .right-layer {
-  z-index: -9999;
+  z-index: 9999;
 }
 .college-board__wrapper .members .left-layer {
   width: 30%;
   top: -13rem !important;
   left: -9rem;
-  z-index: -99999;
+  z-index: 9999;
 }
 .college-board__wrapper .members .item {
   background-color: #e5f0f2;
