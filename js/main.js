@@ -222,3 +222,71 @@ document.querySelectorAll(".accordion-collapse").forEach((collapse) => {
     accordionItem.style.borderRight = "7px solid transparent";
   });
 });
+// contact us page (contact us form logic )
+
+const form = document.getElementById("contact-form");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  // Validate inputs
+  let isValid = true;
+
+  // Name Validation
+  const name = document.getElementById("name");
+  const nameError = document.getElementById("name-error");
+  if (name.value.trim() === "") {
+    nameError.textContent = "   برجاء ادخال الاسم  ";
+    isValid = false;
+  } else {
+    nameError.textContent = "";
+  }
+
+  // Email Validation
+  const email = document.getElementById("email");
+  const emailError = document.getElementById("email-error");
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email.value.trim())) {
+    emailError.textContent = "ادخل البريد الالكتروني الصحيح     ";
+    isValid = false;
+  } else {
+    emailError.textContent = "";
+  }
+
+  // Phone Validation
+  const phone = document.getElementById("phone");
+  const phoneError = document.getElementById("phone-error");
+  const phoneRegex = /^[0-9]{11}$/; // Example: 10-digit phone number
+  if (!phoneRegex.test(phone.value.trim())) {
+    phoneError.textContent = "رقم الهاتف يجب أن يحتوي على 11 رقم";
+    isValid = false;
+  } else {
+    phoneError.textContent = "";
+  }
+
+  // Subject Validation
+  const subject = document.getElementById("subject");
+  const subjectError = document.getElementById("subject-error");
+  if (subject.value.trim() === "") {
+    subjectError.textContent = "   برجاء ادخال الموضوع ";
+    isValid = false;
+  } else {
+    subjectError.textContent = "";
+  }
+
+  // Message Validation
+  const message = document.getElementById("message");
+  const messageError = document.getElementById("message-error");
+  if (message.value.trim() === "") {
+    messageError.textContent = "برجاء ادخال الرسالة ";
+    isValid = false;
+  } else {
+    messageError.textContent = "";
+  }
+
+  // If all inputs are valid
+  if (isValid) {
+    alert("Form submitted successfully!");
+    form.reset(); // Clear the form after successful submission
+  }
+});

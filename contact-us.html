@@ -591,44 +591,78 @@
             <p data-aos="fade-up" data-aos-delay="100">أرسل لنا استفسارك</p>
             <h2 data-aos="fade-up" data-aos-delay="200">تواصل معنا</h2>
           </div>
-          <form class="p-4 pb-5 position-relative">
-            <input
-              type="text"
-              class="form-control mb-3"
-              placeholder="الاسم"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            />
-            <input
-              type="email"
-              class="form-control mb-3"
-              placeholder="البريد الالكتروني"
-              data-aos="fade-up"
-              data-aos-delay="150"
-            />
-            <input
-              type="text"
-              class="form-control mb-3"
-              placeholder="رقم الهاتف"
-              data-aos="fade-up"
-              data-aos-delay="200"
-            />
-            <input
-              type="text"
-              class="form-control mb-3"
-              placeholder="الموضوع"
-              data-aos="fade-up"
-              data-aos-delay="250"
-            />
-            <textarea
-              class="form-control"
-              rows="4"
-              placeholder="الرسالة"
-              data-aos="fade-up"
-              data-aos-delay="100"
-            ></textarea>
+          <form
+            id="contact-form"
+            class="p-4 pb-5 position-relative"
+            onsubmit="handleFormSubmit(event)"
+          >
+            <div class="form-group mb-3">
+              <input
+                type="text"
+                id="name"
+                class="form-control"
+                placeholder="الاسم"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              />
+              <span id="name-error" class="error-message text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                placeholder="البريد الالكتروني"
+                data-aos="fade-up"
+                data-aos-delay="150"
+              />
+              <span id="email-error" class="error-message text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+              <input
+                type="text"
+                id="phone"
+                class="form-control"
+                placeholder="رقم الهاتف"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              />
+              <span id="phone-error" class="error-message text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+              <input
+                type="text"
+                id="subject"
+                class="form-control"
+                placeholder="الموضوع"
+                data-aos="fade-up"
+                data-aos-delay="250"
+              />
+              <span id="subject-error" class="error-message text-danger"></span>
+            </div>
+
+            <div class="form-group">
+              <textarea
+                id="message"
+                class="form-control"
+                rows="4"
+                placeholder="الرسالة"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              ></textarea>
+              <span id="message-error" class="error-message text-danger"></span>
+            </div>
+
             <div class="btn-container">
-              <button class="btn px-5" data-aos="fade-up" data-aos-delay="200">
+              <button
+                type="submit"
+                class="btn px-5"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 إرســــــــــــــال
               </button>
             </div>
@@ -746,5 +780,7 @@
     <script src="js/libraries/bdt-uikit.min.js" id="bdt-uikit-js"></script>
     <script src="js/libraries/aos.js"></script>
     <script src="js/main.js"></script>
+
+  
   </body>
 </html>
