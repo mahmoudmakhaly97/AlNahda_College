@@ -1400,6 +1400,10 @@ img {
   color: var(--gray);
   font-weight: 600;
 }
+.admission_and_registration__wrapper .general-standards .accordion .accordion-body ul a {
+  font-weight: 600;
+  color: var(--main-color);
+}
 @media (max-width: 768px) {
   .admission_and_registration__wrapper .general-standards .accordion .accordion-body ul table {
     display: block;

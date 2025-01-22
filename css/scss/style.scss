@@ -1574,6 +1574,10 @@ img {
             color: var(--gray);
             font-weight: 600;
           }
+          a {
+            font-weight: 600;
+            color: var(--main-color);
+          }
           table {
             @media (max-width: 768px) {
               display: block;
