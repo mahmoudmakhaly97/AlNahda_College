@@ -1516,6 +1516,8 @@ img {
       .accordion-item {
         border: none;
         margin-bottom: 1rem;
+           border-right:  7px solid transparent;
+
       }
       .accordion-button {
         border: 0;
@@ -1549,6 +1551,7 @@ img {
         }
         &.collapsed {
           background-color: #f3f3f3;
+
           &:hover {
             &::after {
               color: var(--main-color);

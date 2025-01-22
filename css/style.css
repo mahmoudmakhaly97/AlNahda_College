@@ -1349,6 +1349,7 @@ img {
 .admission_and_registration__wrapper .general-standards .accordion .accordion-item {
   border: none;
   margin-bottom: 1rem;
+  border-right: 7px solid transparent;
 }
 .admission_and_registration__wrapper .general-standards .accordion .accordion-button {
   border: 0;
