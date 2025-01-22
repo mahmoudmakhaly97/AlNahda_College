@@ -1565,6 +1565,40 @@ img {
       }
       .accordion-body {
         ul {
+          h6 {
+            color: var(--gray);
+            font-weight: 600;
+          }
+          h5 {
+            font-size: 14px;
+            color: var(--gray);
+            font-weight: 600;
+          }
+          table {
+            @media (max-width: 768px) {
+              display: block;
+              overflow-x: auto;
+              white-space: nowrap;
+            }
+            > :not(:first-child) {
+              border: 1px solid #dee2e6 !important;
+            }
+            th {
+              background-color: rgba(63, 153, 205, 0.2);
+              @media (max-width: 768px) {
+                font-size: 14px;
+                padding: 10px;
+              }
+            }
+            td {
+              color: var(--gray);
+              font-weight: 500;
+              @media (max-width: 768px) {
+                font-size: 14px;
+                padding: 10px;
+              }
+            }
+          }
           li {
             font-size: 1.1rem;
             color: var(--gray);

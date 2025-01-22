@@ -1391,6 +1391,44 @@ img {
   background-color: #f3f3f3;
   box-shadow: none;
 }
+.admission_and_registration__wrapper .general-standards .accordion .accordion-body ul h6 {
+  color: var(--gray);
+  font-weight: 600;
+}
+.admission_and_registration__wrapper .general-standards .accordion .accordion-body ul h5 {
+  font-size: 14px;
+  color: var(--gray);
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .admission_and_registration__wrapper .general-standards .accordion .accordion-body ul table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+.admission_and_registration__wrapper .general-standards .accordion .accordion-body ul table > :not(:first-child) {
+  border: 1px solid #dee2e6 !important;
+}
+.admission_and_registration__wrapper .general-standards .accordion .accordion-body ul table th {
+  background-color: rgba(63, 153, 205, 0.2);
+}
+@media (max-width: 768px) {
+  .admission_and_registration__wrapper .general-standards .accordion .accordion-body ul table th {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+.admission_and_registration__wrapper .general-standards .accordion .accordion-body ul table td {
+  color: var(--gray);
+  font-weight: 500;
+}
+@media (max-width: 768px) {
+  .admission_and_registration__wrapper .general-standards .accordion .accordion-body ul table td {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
 .admission_and_registration__wrapper .general-standards .accordion .accordion-body ul li {
   font-size: 1.1rem;
   color: var(--gray);
