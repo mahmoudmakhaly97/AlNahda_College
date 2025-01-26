@@ -75,8 +75,34 @@ $(".academic-programs-carousel-mobile").owlCarousel({
   },
 });
 
-// academic programs carousel
-$(".events-carousel").owlCarousel({
+//  events carousel in desktop
+$(".events-carousel-desktop").owlCarousel({
+  loop: true,
+  rtl: true,
+
+  autoplay: true,
+
+  navText: [
+    "<i class='fas fa-chevron-right'></i>",
+    "<i class='fas fa-chevron-left'></i>",
+  ],
+
+  nav: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 1,
+    },
+    1000: {
+      items: 1,
+    },
+  },
+});
+
+//  events carousel in mobile
+$(".events-carousel-mobile").owlCarousel({
   loop: true,
   rtl: true,
 
